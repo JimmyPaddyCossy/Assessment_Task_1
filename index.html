@@ -3,15 +3,76 @@
 
 <head>
     <title>My Profile</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <!--<link type="text/css" rel="stylesheet" href="style.css">-->
+    <link type="text/css" rel="stylesheet" href="slideShow.css">
+    <script src="slideShow.js"></script>
+    
+    
 </head>
 
 <body>
-    <div id="mainArea">
+    
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img class="imgp" src="Images/img1.jpeg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img class="img" src="Images/img2.JPEG" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img class="img" src="Images/img3.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+             <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img class="imgp" src="Images/img4.JPEG" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+             <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img class="imgp" src="Images/img5.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+             <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img class="imgp" src="Images/img6.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            
+        </div>
+<script src="slideShow.js"></script>
+        
+<div id="mainArea">
         <section>
             <h1>Personal Information</h1>
             <article>
-                <p>Originally from the UK I came out to live in Australia permanently in 2003. I have a Diploma in Software Development and an Advanced Diploma in Business Analysis through TAFE NSW. I love participating in sport and running is my passion, but you’ll also catch me out bushwalking or Cycling. I recently have developed a love for motorbikes and am planning many road trips to come. I love Rock and Metal music, but you’ll find me buying tickets to a symphony. I have a Jack Russell cross called Banjo who loves to run with me once or twice a week. I am married (17 years and the reason I’m in Australia) and we have a daughter. </p>
+                <p>Originally from the UK, I came out to live in Australia permanently in 2003. I have a Diploma in Software Development and an Advanced Diploma in Business Analysis through TAFE NSW. I love participating in sport and running is my passion, but you’ll also catch me out bushwalking or Cycling. I recently have developed a love for motorbikes and am planning many road trips to come. I love Rock and Metal music, but you’ll find me buying tickets to a symphony. I have a Jack Russell cross called Banjo who loves to run with me once or twice a week. I am married (17 years and the reason I’m in Australia) and we have a daughter. </p>
             </article>
         </section>
         <section>
@@ -68,53 +129,53 @@
         </section>
         <section>
             <article>
-                <h1>Project Idea</h1>                
+                <h1>Project Idea</h1>
                 <h2>Overview</h2>
                 <p>The Aim is to build a web app for Performance coaches that links to smart watches such as Garmin and sununto. The app will give runners the ability to upload the metrics from their smart watches to a dedicated coaching app. The Idea being that a coach would get these metrics after a run and be able to analyse data and specifically tailor training loads for individuals based on metrics such as heart rate, Vo2 max milage etc. Additionally, coaches would have the ability to add training sessions to the app and give advice/feedback in addition to Athletes also giving feedback. The app would be aimed at but not exclusive to running, cycling, swimming and Trathlete clubs/groups and can be used by elite through amateur athletes.</p>
                 <h2>Motivation</h2>
                 <p>As a Runner myself being able to directly share my biometrics with my coach is a useful tool in my development as a runner. There are times when training sessions go wrong as fatigue from previous training has built up. It’s not always possible to detect this simply by me providing verbal feedback to coach and could lead to further fatigue and possible injury (feeling good but your resting Heart rate is up). Conversely, coach may reduce a training load, being cautious when not necessary. Additionally, it would provide a go to place for historical data.</p>
                 <h2>Description</h2>
-                <p>It’s not always possible for a coach to receive and give feedback on the day of a training session especially when you are faced with 20-30 athletes all vying for your attention.  The Performance Coach application empowers coaches and athletes by providing an online collaboration tool so that training goals can be achieved, and training Loads monitored by way of athlete feed back and a powerful set of metrics. Information from smart devices, such as smartwatches, can be uploaded to provide metrics such as heart rate and milage to give a coach an overall view of an athlete’s fitness.    
-                The application will allow coaches to not only set training plans, but also give them the ability to alter training sessions based on the athletes training needs. Additionally, the application will allow athletes to set race goals and have the visibility of where they are now and how far off the goal they are. This will give the athlete a clear picture as to how achievable the goal is in addition to insights on the required time and work need to achieve it based, off their current fitness.<br><br> 
-                The application all also allow the athlete to detail any additional training coach is not aware of, such as strength training or additional runs through the week (this happens and is not always fed back to coach). Smartwatch companies such as Garmin and Suunto offer an API and have dedicated developer websites such as the <a href="https://developer.garmin.com/">Garmin Developer Site</a> and the <a href="https://apizone.suunto.com/">Suunto Developer Site</a>.<br><br>
-                Performance Coach will track history of an athlete’s personal development from day one which the athletes will be able to take with them anywhere. So, if an Athlete changes Coach they can take this historical date and present it to their new coach who can immediately tap into their training needs. In addition, Performance Coach will allow a smart device to sync and back date information into the application.<br><br> 
-                In addition to a Web application Performance Coach will give access to a mobile app for iOS and Android so coaches and athletes can access information when a computer is simply not available. 
-                Performance Coach will allow for athletes such as Runners, cyclists, swimmers, Triathletes and could be tailored to other sports such as Team sports, rowing etc.<br><br> 
-                The aim would be to not just allow, a “one stop shop solution” but be able to Taylor the solution to a coach’s specific needs and style of coaching.</p>
+                <p>It’s not always possible for a coach to receive and give feedback on the day of a training session especially when you are faced with 20-30 athletes all vying for your attention. The Performance Coach application empowers coaches and athletes by providing an online collaboration tool so that training goals can be achieved, and training Loads monitored by way of athlete feed back and a powerful set of metrics. Information from smart devices, such as smartwatches, can be uploaded to provide metrics such as heart rate and milage to give a coach an overall view of an athlete’s fitness.
+                    The application will allow coaches to not only set training plans, but also give them the ability to alter training sessions based on the athletes training needs. Additionally, the application will allow athletes to set race goals and have the visibility of where they are now and how far off the goal they are. This will give the athlete a clear picture as to how achievable the goal is in addition to insights on the required time and work need to achieve it based, off their current fitness.<br><br>
+                    The application all also allow the athlete to detail any additional training coach is not aware of, such as strength training or additional runs through the week (this happens and is not always fed back to coach). Smartwatch companies such as Garmin and Suunto offer an API and have dedicated developer websites such as the <a href="https://developer.garmin.com/">Garmin Developer Site</a> and the <a href="https://apizone.suunto.com/">Suunto Developer Site</a>.<br><br>
+                    Performance Coach will track history of an athlete’s personal development from day one which the athletes will be able to take with them anywhere. So, if an Athlete changes Coach they can take this historical date and present it to their new coach who can immediately tap into their training needs. In addition, Performance Coach will allow a smart device to sync and back date information into the application.<br><br>
+                    In addition to a Web application Performance Coach will give access to a mobile app for iOS and Android so coaches and athletes can access information when a computer is simply not available.
+                    Performance Coach will allow for athletes such as Runners, cyclists, swimmers, Triathletes and could be tailored to other sports such as Team sports, rowing etc.<br><br>
+                    The aim would be to not just allow, a “one stop shop solution” but be able to Taylor the solution to a coach’s specific needs and style of coaching.</p>
                 <h2>Tool and Technologies</h2>
                 <p>The main web application will be built using .net core 6 framework and will employ technologies such as:</p>
-                    <dl>
-                        <dt>Front End</dt>
-                        <dd>- HTML CSS and Java script will be used on the front end for the web development along with other third-party applications such as bootstrap CSS and angular where needed.</dd>
-                        <dt>Back End</dt>
-                        <dd>- C# will handle back-end code and APIs and razor engine with tag helpers will be used to pass information to and from the frontend.</dd>
-                        <dt>Design</dt>
-                        <dd>- MVC MVVM patters will be deployed and a code first approach using Entity Framework core. This will help to rapidly build the data base based on needs. This will also allow Authentication and authorization for API services.</dd>
-                        <dt>Security</dt>
-                        <dd>- Identity framework will provide a level of security and encryption (256bit encryption).</dd>
-                        <dt>API's</dt>
-                        <dd>- RESTful API will be created to handle mobile applications so that native iOS and Android technologies can be used to communication with the main application.</dd>
-                        <dt>Data base</dt>
-                        <dd>- Ms Sequal Server will be used to sotre and handle all data</dd>
-                        <dt>Hosting</dt>
-                        <dd>- Azure Webservices will host all applications</dd>
-                        <dt>version control and Release</dt>
-                        <dd>- Git and GutHub will be used to contrl the flow of work. in addition Nuget packaget and Team ciry will link with Octopus deploymnet software</dd>
-                        <dt>Environments</dt>
-                        <dd>- Development, Testing, User Acceptance Testing and Production Environments will be required</dd>
-                        <dt>Harware</dt>
-                        <dd>- Hardware will generaly be limited to local machines for Developers,  cloud services should be able to provide a solution for all enviromnents so the use of servers in this case may be limited perhaps negated. </dd>
-                    </dl>
+                <dl>
+                    <dt>Front End</dt>
+                    <dd>- HTML CSS and Java script will be used on the front end for the web development along with other third-party applications such as bootstrap CSS and angular where needed.</dd>
+                    <dt>Back End</dt>
+                    <dd>- C# will handle back-end code and APIs and razor engine with tag helpers will be used to pass information to and from the frontend.</dd>
+                    <dt>Design</dt>
+                    <dd>- MVC MVVM patters will be deployed and a code first approach using Entity Framework core. This will help to rapidly build the data base based on needs. This will also allow Authentication and authorization for API services.</dd>
+                    <dt>Security</dt>
+                    <dd>- Identity framework will provide a level of security and encryption (256bit encryption).</dd>
+                    <dt>API's</dt>
+                    <dd>- RESTful API will be created to handle mobile applications so that native iOS and Android technologies can be used to communication with the main application.</dd>
+                    <dt>Data base</dt>
+                    <dd>- Ms Sequal Server will be used to sotre and handle all data</dd>
+                    <dt>Hosting</dt>
+                    <dd>- Azure Webservices will host all applications</dd>
+                    <dt>version control and Release</dt>
+                    <dd>- Git and GutHub will be used to contrl the flow of work. in addition Nuget packaget and Team ciry will link with Octopus deploymnet software</dd>
+                    <dt>Environments</dt>
+                    <dd>- Development, Testing, User Acceptance Testing and Production Environments will be required</dd>
+                    <dt>Harware</dt>
+                    <dd>- Hardware will generaly be limited to local machines for Developers, cloud services should be able to provide a solution for all enviromnents so the use of servers in this case may be limited perhaps negated. </dd>
+                </dl>
                 <h2>Skills Required</h2>
                 <p>Full stack .net developers will be needed for the main application. HTML CSS C# java script. Developers must have experience with .net core and be familiar with identity and Entity framework. <br>
                     Developers must the have ability and experience to build RESTful API services. Developers will need experience in Azure webservices.<br>
-                    UX and UI designers will be needed for the web and mobile applications and experience with Adobe suite is essential.<br>   
+                    UX and UI designers will be needed for the web and mobile applications and experience with Adobe suite is essential.<br>
                     In addition, subject matter experts will be needed such as skilled coaches and exercise physiologists to provide training insights and expertise. <br>
                     Business Analysis and Project managers will work alongside Development teams in a Scrum approach enabling rapid software development.</p>
-                
+
                 <h2>Outcome</h2>
                 <p>The Outcome of the project is to provide a viable and competitive solution to current technologies such as <a href="https://www.trainingpeaks.com/">Training Peaks.</a><br>
-                    There are limited applications of this nature in the marketplace and uptake is limited by coaches due to lack of competition and pricing.<br> 
+                    There are limited applications of this nature in the marketplace and uptake is limited by coaches due to lack of competition and pricing.<br>
                     The application will give coach’s clearer and better visibility to the individual training needs of any athlete from the recreational amateur to the Elite athlete.</p>
             </article>
         </section>
