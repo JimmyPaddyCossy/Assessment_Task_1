@@ -5,17 +5,7 @@
 /* Slideshow container */
 .slideshow-container {
     max-width: 400px;
-    float:left;
-    
-
 }
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-
 
 /* Fading animation */
 .fade {

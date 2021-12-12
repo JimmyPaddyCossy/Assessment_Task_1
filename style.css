@@ -1,12 +1,14 @@
+/*-------------------Elements----------------*/
+
 html {
-    background: #e6e9e9;
-    background-image: radial-gradient(circle, #d9e8dc , #a2c7a2 , #b0cbb1 );
+    background: #b0cbb1;
+    /*background-image: linear-gradient(#d9e8dc , #a2c7a2 , #b0cbb1 );*/
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    background: #d9e8dc;
+    box-shadow: 0 0 300px #a2c7a2;
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -16,8 +18,7 @@ body {
     padding: 1em .3em 4em;
 }
 
-h1,
-h2,
+h1,h2,
  {
     color: #222;
     font-weight: 600;
@@ -31,25 +32,23 @@ h2 {
 a {
     color: #0083e8;
 }
-
-b,
-strong {
-    font-weight: 600;
-}
-
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 10px;
+img {    
+    border: 6px ridge #b0cbb1;
+    border-radius: 5px;
     display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
+    margin: 1em auto;
+    max-width: 50%;
+    
 }
 
-#name {
-	float: left;
-    margin-top: 10%
+section {
+	border-top: 2px solid #b0cbb1;	
+}
+
+/*-----------------ID's-------------------------*/
+
+#name {	
+    margin-top: 10%;          
 }
 
 
@@ -59,21 +58,18 @@ img {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-top:-10px;
     margin-bottom: -50px;
-    color: yellow;
+    color: #b0cbb1;
 }
 
 #name h2 {
 	font-size: 2em;
 	margin-left: 2px;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-    color: aquamarine;
+    color: #d9e8dc;
 }
 
-
-
-#contactDetails {
-	float: right;
-    margin-top: 10%
+#contactDetails {	
+    margin-top: 10%;
 }
 
 #contactDetails ul {
@@ -84,11 +80,11 @@ img {
 
 #contactDetails ul li {
 	margin-bottom: 3px;
-	color: white;
+	color: #a2c7a2;
 }
 
-#contactDetails ul li a, a[href^=tel] {
-	color: white; 
+#contactDetails a {
+	color: #d9e8dc; 
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -98,36 +94,21 @@ img {
 }
 
 #contactDetails ul li a:hover { 
-	color: #6FFFE9;
+	color: #A9fe99;
 }
 
+/*----------------Class's--------------*/
 
-
-
-
-.img-round {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 4px solid rgba(0, 0, 0, 0.8);
-    border-radius: 30%;
-    display: block;
-    margin: 1.3em auto;
+.img-round {         
     max-width: 60%;
+    border:none;
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex;  
   background-color: black;
+    border-top: 2px solid #b0cbb1;
+    border-left: 2px solid #b0cbb1;
+    border-right: 2px solid #b0cbb1;    
 }
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
 
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-}
