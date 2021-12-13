@@ -30,8 +30,24 @@ h2 {
 }
 
 a {
-    color: #0083e8;
+    color:cadetblue;
+    text-decoration: none;
+    
 }
+
+a:hover{
+    color: forestgreen;
+    text-decoration: underline;
+    
+}
+
+a:visited{
+    color: indianred;   
+}
+
+
+
+
 img {    
     border: 6px ridge #b0cbb1;
     border-radius: 5px;
@@ -41,9 +57,8 @@ img {
     
 }
 
-section {
-	border-top: 2px solid #b0cbb1;	
-}
+
+
 
 /*-----------------ID's-------------------------*/
 
@@ -70,11 +85,12 @@ section {
 
 #contactDetails {	
     margin-top: 10%;
+   
 }
 
 #contactDetails ul {
 	list-style-type: none;
-	font-size: 1.5em;
+	font-size: 1em;
 	margin-top: 2px;
 }
 
@@ -94,7 +110,7 @@ section {
 }
 
 #contactDetails ul li a:hover { 
-	color: #A9fe99;
+	color: forestgreen;
 }
 
 /*----------------Class's--------------*/
@@ -104,11 +120,96 @@ section {
     border:none;
 }
 
-.flex-container {
-  display: flex;  
+.flex-containerhead {
+  display: flex;    
   background-color: black;
     border-top: 2px solid #b0cbb1;
     border-left: 2px solid #b0cbb1;
     border-right: 2px solid #b0cbb1;    
 }
+.flex-container2 {
+  display: flex;  
+  align-items: flex-start;
+    justify-content: center;
+  border-top: 2px solid #b0cbb1;
+     
+}
+.flex-container3 {
+  display: flex;   
+  align-items: flex-start;
+    justify-content: center;
+  border-top: 2px solid #b0cbb1;
+  background-color: black;
+     
+}
+
+.sectionTitle2 {	
+	width: 30%;
+    color: black;
+    margin-left: 2em;
+   
+}
+
+.sectionContent2 {	
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	margin-bottom: .5em;
+	width: 70%;
+    color: black;
+    margin-right: 1em;
+    border-left: 1px solid #b0cbb1;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.sectionTitle2 h1  {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 2em; 
+	
+}
+
+
+.sectionContent2 h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+    text-align: left;
+   
+}
+
+.sectionTitle3 {	
+	width: 30%;
+    color: #b0cbb1;
+     margin-left: 2em;
+}
+
+.sectionContent3 {
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	margin-bottom: .5em;
+	width: 70%;
+    color: #d9e8dc;
+    margin-right: 1em;
+    border-left: 1px solid #b0cbb1;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.sectionTitle3 h1  {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 2em;  
+	
+}
+
+.sectionContent3 h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+   text-align: left;
+}
+
+
+
 
