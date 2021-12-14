@@ -5,11 +5,21 @@
     <title>My Profile</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="slideShow.css">
-    <script src="slideShow.js"></script>
+   <link type="text/css" rel="stylesheet" href=stickyNav.css>
 
 </head>
 
-<body>   
+<body id="Top">
+    
+<div id="navbar">  
+  <a href="#Top">Top</a>
+  <a href="#Info">Personal Information</a>
+  <a href="#Interest">Interest In IT</a>
+    <a href="#Job">Ideal Job</a>
+  <a href="#Personalities">Personality Profile</a>
+    <a href="#Project">Project Idea</a>
+</div>
+    <script src="stickyNav.js"></script>
     <div class="flex-containerhead">
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -52,19 +62,20 @@
         </div>
     </div>
     <script src="slideShow.js"></script>
-    <div id="mainArea">
+    <div class="clear"></div>
+    <div id="mainArea">        
         <div class="flex-container2"> 
             <div class="sectionTitle2">
-                <h1>Personal <br> Information</h1>
+                <h1 id="Info">Personal <br> Information</h1>
             </div>
             <div class="sectionContent2">                
                     <p>Originally from the UK, I came out to live in Australia permanently in 2003.<br> I have a Diploma in Software Development and an Advanced Diploma in Business Analysis through TAFE NSW. I love participating in sport and running is my passion, but you’ll also catch me out bushwalking or Cycling. I recently have developed a love for motorbikes and am planning many road trips to come. I love Rock and Metal music, but you’ll find me buying tickets to a symphony. I have a Jack Russell cross called Banjo who loves to run with me once or twice a week. I am married (17 years and the reason I’m in Australia) and we have a daughter. </p>                
             </div>        
         </div>
-        
+        <div class="clear"></div>
         <div class="flex-container3">
             <div class="sectionTitle3">
-                <h1>Interest <br> in IT</h1>
+                <h1 id="Interest">Interest <br> in IT</h1>
             </div>
             <div class="sectionContent3">
                 
@@ -88,10 +99,11 @@
                         I have chosen to come to RMIT through Open University as I needed the flexibility of online learning. For now, I have only chosen one subject as I don’t want to take on too much but hope in the next semester to take on the Introduction to Programming. This is to enable me to take on the full Degree course. </p>
                     <p>My aim in taking the Degree is to better educate myself and importantly fill in any gaps in my knowledge. I hoping to become a better developer and gain a better understanding of software development principals. Additionally, I would like to take a deeper dive into software development and a more scientific approach to IT, for example how does software interact with hardware? I am also hoping to make myself more employable.</p>               
             </div>
-        </div>   
+        </div>  
+        <div class="clear"></div>
             <div class="flex-container2"> 
             <div class="sectionTitle2">
-                <h1>Ideal <br> Job</h1>
+                <h1 id="Job">Ideal <br> Job</h1>
             </div>
             <div class="sectionContent2">                
                     <p>My current Asprirations would be as similar to a <a href="jobAdd.pdf" target="_blank">Full Stack Developer.</a><br><br>
@@ -99,13 +111,13 @@
                         This position requires the developer to have a sound Understanding of MS SQL Server, Azure web services, C# code Language, be able to build Web Api's and understand Model View Controller architecture (MVC). In addition, web technologies such as Angular and React which are JavaScript frameworks. Additionally, understating of TDD (Test Driven Design) and BDD Behaviour Driven Design Principals as well as architectural design patters (Assuming CRUD, SOLID, Singleton patters, containers and Factories).<br><br>
                         I have some very limited experience with .net core tech-stack, but my C# skills leave a lot to be desired. I have a Cert IV and Diploma in software Development which gave me some experience building solutions in .net core and Android studio, but it’s been some time since I have used these skills.
                         My recent position in Application support gave me intermediate knowledge in Sequel Server Management Studio as I used SQL daily. I also gained limited experience in XSLT which is something no one seems to teach any more but still quite prevalent in Legacy systems. I have experience with frontend HTML and CSS, but I need to develop my Java script skills. <br><br>
-                        My current plan is to develop my C# skills and I am starting, all be it slowly, to use Pluralsight to gain better knowledge. I also have a plan to develop my own website about me showcasing my knowledge as I go through this degree course. The Idea is to constantly add topics to the site about various Developer technologies and design principals and how they can be used as i learn about them. This will serve not only to capture my experience and use a reference but allow me to build a website from scratch and host it using perhaps a cloud-based solution such as Azure (something I have not done before). In addition, this will serve as a reference point to future employees as to my skill set.</p>              
+                        My current plan is to develop my JavaScript skills and I am starting, all be it slowly, to use Pluralsight to gain better knowledge. This will enable me to focus on one web development and start to understand JavaScript liberies such as React and node.js and ultimatly look for webdevelopment work. I also have a plan to develop my own website about me showcasing my knowledge as I go through this degree course. The Idea is to constantly add topics to the site about various Developer technologies and design principals and how they can be used as i learn about them. This will serve not only to capture my experience and use a reference but allow me to build a website from scratch and host it using perhaps a cloud-based solution such as Azure (something I have not done before). In addition, this will serve as a reference point to future employees as to my skill set.</p> 
             </div>
             </div>
-                
+              <div class="clear"></div>  
             <div class="flex-container3"> 
             <div class="sectionTitle3">
-                <h1>Personality <br> Profile</h1>
+                <h1 id="Personalities">Personality <br> Profile</h1>
             </div>
             <div class="sectionContent3">                
                     <h2>16 Personalities</h2>
@@ -123,9 +135,10 @@
                         Conflicts need to be resolved quickly with both parties needing to reach a compromise, but I acknowledge that I may not be overly willing to compromise. However, I like to believe that conflict can be negated buy team cooperation and by-in from the get-go. It’s important that every member of the team has an opportunity to put forward ideas and criticisms. After all, even the quietest person can provide solutions. My role when mitigating conflict is to help mediate and arrive at the best solution for team cohesiveness. This will involve a diplomatic approach considering a person’s idea may be their passion. Facts should always take precedence and when people disagree open dialog and discussion should be used to arrive at compromise.</p>              
             </div>
         </div>
+        <div class="clear"></div>
         <div class="flex-container2"> 
             <div class="sectionTitle2">
-                <h1>Project <br> Idea</h1>
+                <h1 id="Project">Project <br> Idea</h1>
             </div>
             <div class="sectionContent2">
                 
@@ -180,9 +193,9 @@
                     <p>The Outcome of the project is to provide a viable and competitive solution to current technologies such as <a href="https://www.trainingpeaks.com/" target="_blank">Training Peaks.</a><br>
                         There are limited applications of this nature in the marketplace and uptake is limited by coaches due to lack of competition and pricing.<br>
                         The application will give coach’s clearer and better visibility to the individual training needs of any athlete from the recreational amateur to the Elite athlete.</p>
-               
             </div>
         </div>
+        <div class="clear"></div>
     </div>
 </body>
 </html>
