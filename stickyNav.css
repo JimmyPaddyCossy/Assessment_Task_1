@@ -4,7 +4,7 @@
 }
 
 #navbar a:hover{     
-   color:  #d9e8dc;
+   color:  #ffe0b3;
 }
 
 #navbar a {
@@ -18,7 +18,7 @@
     height: 4em;
     width:16.6666667%;
     font-weight: 600;
-   
+    
     
 }
 
@@ -29,7 +29,8 @@
 }
 .sticky {
     position: sticky;
-    top: 0;    
+    top: 0;  
+    
     
 }
 

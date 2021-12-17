@@ -89,7 +89,7 @@ dd {
     font-size: 2em;
     margin-left: 2px;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-    color: #d9e8dc;
+    color: #ffe0b3;
     margin-top: 20%;
 }
 
@@ -110,7 +110,7 @@ dd {
     #name h2 {
         font-size: 2em;
         font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-        color: #d9e8dc;
+        
     }
 }
 
@@ -132,8 +132,7 @@ dd {
 
     #name h2 {
         font-size: 1.5em;
-        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-        color: #d9e8dc;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;        
         margin-top: 25%;
     }
 }
@@ -165,7 +164,7 @@ dd {
 }
 
 #contactDetails ul li a:hover {
-    color: forestgreen;
+    color: #ffe0b3;
 }
 
 /*----------------------------------Flexcontainerhead-contact details-@media---------------------*/
@@ -311,6 +310,7 @@ dd {
     font-size: 1.5em;
     margin-bottom: 1em;
     text-align: left;
+    
 
 }
 
@@ -355,6 +355,7 @@ dd {
         font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
         font-size: 1.5em;
         text-align: center;
+        
 
     }
 }
@@ -401,6 +402,7 @@ dd {
     font-size: 1.5em;
     margin-bottom: 1em;
     text-align: left;
+    color: #ffe0b3;
 }
 
 /*----------------------------------Flexcontainer3-@media----------------------*/
